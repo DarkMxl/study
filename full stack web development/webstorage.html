@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div id="name"></div>
+
+		<script>
+
+		if(typeof(Storage) !== "undefined"){
+			//stoe an item
+		
+
+		localStorage.setItem('name', "Jonh Doe");
+
+		// Get item
+
+		console.log(localStorage.name);
+
+		//remove an item
+		localStorage.removeItem('name')
+
+		if(localStorage.name){
+			document.getElementById('name').innerHTML=localStorage.getItem('name');
+
+		} else{
+			document.getElementById('name').innerHTML='No name found';
+		}
+
+		} else {
+			console.log('localStorage Not Available');
+		}
+		</script>
+
+		//em vez de localStorage, sessionStorage para uma sessao só
+	
+	</body>
+</html>

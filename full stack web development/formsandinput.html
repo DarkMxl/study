@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms & Input</title>
+	</head>
+	<body>
+		<h1>Registration Form</h1>
+		<form action="POST" action="formsandinput.php">
+		<fieldset>
+			<legend>Account</legend>
+			<label>Name</label><br>
+			<input type="text" name="name">
+			<br><br>
+			
+			<label>Email</label><br>
+			<input type="email" name="email">
+			<br><br>
+			
+			<label>Passwords</label><br>
+			<input type="passowrd" name="passord">
+			<br><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>User Info</legend>
+			<label>Location</label><br>
+			<select name="location">
+				<option value="MA">MA</option>
+				<option value="NY" selected>NY</option>
+				<option value="CA">CA</option>
+			</select>
+			<br><br>
+			
+			<label>Gender</label><br>
+			<Input type="radio" name="gender" value="Male">
+			Male
+			<input type="radio" name="gender" value="Female"
+			checked> Female
+			<br><br>
+
+			<label>Interests</label><br>
+			<Input type="checkbox" name="interests" value="Movies">Movies
+			<Input type="checkbox" name="interests" value="Music">Music
+			<input type="checkbox" name="interests" value="Sports" checked>Sports
+			<input type="checkbox" name="interests" value="Art" checked>Art
+			<br><br>
+		</fielset>
+		<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>

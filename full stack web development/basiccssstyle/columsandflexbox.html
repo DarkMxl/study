@@ -1,0 +1,80 @@
+*<!DOCTYPE html>
+<html>
+	<head>
+		<title>Columns</title>
+	</head>
+	<style>
+		article{
+			column-count:3;
+			column-gap:40px;
+			/*
+			column-rule-style:solid;
+			column-rule-width: 1px;
+			column-rule-color: coral;
+			*/
+			column-rule: 1px solid coral;
+		}
+
+		article h1{
+			column-span:all;
+		}
+
+		.textbox1{
+			border: 2px solid;
+			padding:20px;
+			width:300px;
+			overflow:auto;
+			resize: both;
+		}
+
+		.textbox2{
+			margin:20px;
+			padding:10px;
+			width:300px;
+			border:1px solid black;
+			outline: 1px solid red;
+			outline-offset:10px;
+		}
+
+		.flex-container{
+			display:flex;
+			/*
+			flex-direction:column-reverse;
+			*/
+			justify-content:space-around;
+			width:400px;
+			height: 250px;
+			background-color: #000;
+
+		}
+
+		.flex-item{
+			background-color:lightblue;
+			width: 100px;
+			height: 100px;
+			margin:10px;
+		}
+
+		.first{
+			order:-1;
+		}
+	</style>
+	<body>
+		<article>
+			<h1>Article Title</h1>
+			O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.
+		</article>
+
+		<br>
+
+		<div class="textbox1">Try and resize this element</div>
+		<div class="textbox2">This element has a 10px outline</div>
+
+		<div class="flex-container">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item first">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+
+	</body>
+</html>
